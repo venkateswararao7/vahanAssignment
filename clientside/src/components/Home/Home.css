@@ -1,0 +1,125 @@
+.Home-container {
+    display: flex;
+
+    background-color: #CDE8E5;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #EEF7FF;
+    width: 50vw;
+
+}
+
+.form-container>.container {
+    width: 45vw;
+
+
+}
+
+
+label {
+    display: block;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.inputfield {
+    width: 60%;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px black;
+}
+
+input[type="date"] {
+    width: 23%;
+    height: 30px;
+    font-size: 20px;
+
+}
+
+
+.button-container {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container>button {
+    width: 60%;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px black;
+    font-size: 30px;
+    background-color: #DCF2F1;
+    cursor: pointer;
+}
+
+.entity-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    max-height: 300px;
+    grid-gap: 10px;
+    overflow-y: scroll;
+}
+
+.entity-container::-webkit-scrollbar {
+    display: none;
+}
+
+.entity-container>.entity-data {
+    background-color: #f0f0f0;
+    word-wrap: break-word;
+}
+
+.entity-container>.entity-data>* {
+    margin-bottom: 5px;
+    /* Add some space between elements */
+}
+
+.entity-button {
+
+    background-color: #CDE8E5;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:769px) {
+    .Home-container {
+        display: block;
+    }
+
+    .form-container {
+        width: 100vw;
+
+    }
+
+    .form-container>.container {
+        width: 95vw;
+    }
+
+    label {
+        display: block;
+        font-size: 20px;
+    }
+
+    .inputfield {
+        width: 85%;
+
+    }
+
+    .button-container>button {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+}
